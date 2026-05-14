@@ -33,6 +33,16 @@
     --header-height: 80px;
 }
 
+body.dark-mode {
+    --bg: oklch(15% 0.02 250);
+    --surface: oklch(20% 0.02 250);
+    --surface-dark: oklch(10% 0.02 250);
+    --fg: oklch(95% 0.005 250);
+    --muted: oklch(70% 0.01 250);
+    --border: oklch(30% 0.02 250);
+    --accent-soft: oklch(25% 0.05 250);
+}
+
 /* --- Reset & Base --- */
 * {
     margin: 0;
@@ -118,6 +128,30 @@ img {
 .btn-large {
     padding: 16px 36px;
     font-size: 16px;
+}
+
+.btn-theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg);
+    transition: all 0.2s ease;
+    border: 1px solid var(--border);
+}
+
+.btn-theme:hover {
+    background: var(--surface);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+body.dark-mode .main-header {
+    background: rgba(20, 20, 20, 0.85);
 }
 
 /* Badge */
