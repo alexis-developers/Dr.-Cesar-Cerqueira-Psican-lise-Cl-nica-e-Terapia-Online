@@ -5,7 +5,7 @@
     --surface: oklch(98.5% 0.005 250);
     --surface-dark: oklch(20% 0.02 250);
     --fg: oklch(20% 0.02 250);
-    --muted: oklch(55% 0.02 250);
+    --muted: oklch(36% 0.02 250);
     --border: oklch(92% 0.01 250);
     
     /* Primary Accent (XenMedical Blue vibe) */
@@ -49,7 +49,8 @@ body {
     font-family: var(--font-main);
     background-color: var(--bg);
     color: var(--fg);
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.75;
     overflow-x: hidden;
 }
 
@@ -276,8 +277,8 @@ img {
 }
 
 .feature-text p {
-    font-size: 14px;
-    color: oklch(80% 0.01 250);
+    font-size: 15px;
+    color: oklch(88% 0.01 250);
 }
 
 /* Hero Image */
@@ -366,7 +367,7 @@ img {
 }
 
 .stat-item p {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--muted);
 }
 
@@ -427,7 +428,7 @@ img {
 }
 
 .espec-card p {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--muted);
 }
 
@@ -466,7 +467,7 @@ img {
 
 .step-item p {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* Depoimentos */
@@ -524,7 +525,6 @@ img {
 
 .cta-banner p {
     font-size: 18px;
-    opacity: 0.9;
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -551,7 +551,7 @@ img {
 
 .footer-about p {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer-links h5, .footer-contact h5 {
@@ -569,7 +569,7 @@ img {
 
 .footer-links a {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer-links a:hover {
@@ -581,7 +581,7 @@ img {
     align-items: center;
     gap: 12px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer-contact i {
@@ -593,7 +593,7 @@ img {
     padding: 30px 0;
     text-align: center;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* --- Responsive --- */
@@ -638,15 +638,41 @@ img {
 }
 
 @media (max-width: 640px) {
-    .section-title {
-        font-size: 28px;
+    body {
+        font-size: 17px;
     }
-    
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-subtitle {
+        font-size: 17px;
+    }
+
+    .sobre-text p {
+        font-size: 17px;
+    }
+
+    .espec-card p,
+    .step-item p,
+    .stat-item p {
+        font-size: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
     .cta-banner {
         padding: 40px 20px;
     }
-    
+
     .cta-banner h2 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .cta-banner p {
+        font-size: 17px;
     }
 }
