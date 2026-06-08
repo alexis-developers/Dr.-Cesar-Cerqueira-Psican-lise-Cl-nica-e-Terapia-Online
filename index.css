@@ -711,3 +711,94 @@ body.dark-mode .main-header {
         font-size: 17px;
     }
 }
+
+/* ========================================
+   Seção de Localização
+   ======================================== */
+.location-section {
+    background-color: #0B1320;
+    padding: 72px 16px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .location-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+    }
+}
+
+/* --- Informações de Endereço --- */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-pin-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.location-icon {
+    color: #B59664;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.location-street {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.location-city {
+    color: #d1d5db;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.location-ref {
+    color: #9ca3af;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* --- Mapa --- */
+.location-map-wrapper {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
+}
+
+.location-map {
+    width: 100%;
+    min-height: 250px;
+    height: 340px;
+    border: none;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .location-map {
+        height: 260px;
+    }
+}
